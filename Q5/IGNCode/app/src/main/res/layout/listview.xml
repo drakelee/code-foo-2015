@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Definig a container for you List Item-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00ffffff"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="01"
+                android:id="@+id/index"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/list_content"
+                android:layout_alignBottom="@+id/list_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:id="@+id/list_content"
+                android:textColor="#a2252525"
+                android:gravity="left"
+                android:text="sample"
+                android:textStyle="bold"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.51"
+                android:background="#00ffffff"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="2:00"
+                android:id="@+id/time"
+                android:layout_marginRight="0dp"
+                android:layout_alignTop="@+id/index"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
